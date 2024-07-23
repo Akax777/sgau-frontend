@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+/*Todo lo del main*/
+
+main {
+  animation: aparecer2 1s;
+  animation: fondo 30s infinite alternate;
+  background-color: #c5c3c3;
+  background-image: url("images/1.png");
+  background-size: 100% 100%;
+  background-repeat: repeat-x;
+  background-position: center;
+  display: flex;
+  flex-grow: 1;
+  transition: all 0.3s;
+}
+
+#presentation-container {
+  align-self: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 40rem; /* unchanged */
+  text-align: left;
+  width: 60%;
+}
+
+#uni {
+  animation: aparecer 1.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+  color: rgb(35, 34, 34);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 380%;
+  font-weight: bold;
+  padding-right: 20%; /* converted to percentage */
+  padding-top: 3.5rem; /* unchanged */
+  transition: all 0.3s;
+}
+
+#subt {
+  animation: aparecer 1.5s;
+  animation-delay: 0.8s;
+  animation-fill-mode: both;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.06rem; /* converted to rem */
+  font-weight: normal;
+  line-height: 1.5;
+  margin-top: 3.8rem; /* unchanged */
+  padding-right: 25%; /* converted to percentage */
+  transition: all 0.5s;
+}
+
+#brm {
+  animation: aparecer 1.5s;
+  animation-delay: 0.8s;
+  animation-fill-mode: both;
+  background-color: rgba(34, 51, 68, 0);
+  border: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.6rem; /* unchanged */
+  margin-right: 25%; /* converted to percentage */
+  transition: all 0.5s;
+  width: 15rem; /* unchanged */
+}
+
+.b-inner-ext {
+  background-color: rgba(0, 0, 243, 0.539);
+  border-radius: 100% 0% 0% 100%;
+  height: 2.5rem; /* unchanged */
+  width: 2.5rem; /* converted to rem */
+}
+
+.b-inner-ext:nth-child(3) {
+  border-radius: 0% 100% 100% 0%;
+}
+
+#b-inner-text {
+  background-color: rgba(0, 0, 243, 0.539);
+  color: rgb(0, 0, 66);
+  font-weight: bold;
+  font-size: 150%; /* converted to rem */
+  height: 2.5rem; /* unchanged */
+  transition: 0.5s;
+  padding-top: 0.3rem; /* unchanged */
+  padding-bottom: 0.2rem; /* unchanged */
+}
+
+#b-inner-text:hover {
+  color: white;
+}
+
+@keyframes aparecer {
+  from {
+    transform: translateX(-15rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fondo {
+  from {
+    background-size: 100% 100%;
+  }
+  to {
+    background-size: 115% 115%;
+  }
+}
+
+@media (max-width: 1280px) {
+  #uni {
+    font-size: 350%;
+    padding-right: 5%;
+    text-align: center;
+  }
+
+  #subt {
+    padding-right: 5%;
+    text-align: center;
+  }
+
+  #brm {
+    margin-right: 5%;
+    margin-left: 9%;
+  }
+}
+
+@media (max-width: 720px) {
+  main {
+    animation: none;
+    background-size: 200% 200%;
+    background-position: left;
+  }
+
+  #presentation-container {
+    text-align: center;
+    width: 100%;
+  }
+
+  #uni {
+    font-size: 330%;
+    padding-right: 0;
+  }
+
+  #subt {
+    padding-right: 0;
+  }
+
+  #brm {
+    margin-right: 0;
+    margin-left: 9%;
+  }
+
+  /*Form*/
+
+  form {
+    height: auto;
+    margin-left: 13%;
+    padding: 1rem;
+    margin-top: -295px;
+    width: 18rem;
+  }
+  .f-button {
+    background-color: #f39c12;
+    font-size: 1rem;
+    height: 2rem;
+    margin-left: 21px;
+    margin-top: -1rem;
+    width: 6rem;
+  }
+  .f-input {
+    font-size: 16px;
+    padding-left: 0.5rem;
+  }
+  #f-img-one {
+    height: 127px;
+    margin-left: 54px;
+    width: 61%;
+  }
+  .f-input-image {
+    height: 81%;
+    padding: -2rem;
+    width: 86%;
+  }
+  .f-input-outside {
+    height: 2.8rem;
+    margin-top: 1.6rem;
+  }
+
+  .f-button:hover {
+    color: white;
+  }
+}

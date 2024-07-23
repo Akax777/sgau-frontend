@@ -1,0 +1,105 @@
+form {
+  align-self: center;
+  background-color: rgba(214, 214, 214, 0.838);
+  border: solid 1px #13131397;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  height: 36rem;
+  margin-left: 40%;
+  padding: 4rem;
+  position: absolute;
+  transform: scale(0);
+  transition: all 0.3s;
+  width: 29rem;
+}
+
+#f-img-one {
+  color: white;
+  height: 7rem;
+  margin-inline: auto;
+  width: 50%;
+}
+
+.f-input-outside {
+  display: flex;
+  flex-direction: row;
+  height: 3.8rem;
+  margin-top: 2.6rem;
+}
+
+.f-input {
+  background-color: #949494de;
+  border: none;
+  font-size: 1.2rem;
+  height: 100%;
+  padding-left: 1.5rem;
+  width: 100%;
+}
+
+.f-input::placeholder {
+  color: #141414a4;
+  font-weight: bold;
+}
+
+.f-input:focus {
+  outline: none;
+}
+
+.f-input-image-container {
+  background-color: #949494de;
+  display: grid;
+  width: 20%;
+}
+
+.f-input-image {
+  align-self: center;
+  background-color: rgb(174, 174, 174);
+  height: 75%;
+  justify-self: center;
+  padding: 0.3rem;
+  width: 70%;
+}
+
+#notify-box {
+  color: rgb(255, 115, 0);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 10%;
+}
+
+#button-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.f-button {
+  background-color: #2819efd4;
+  border-radius: 10%;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 3rem;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  transition: all 0.2s;
+  width: 9rem;
+}
+
+.f-button:last-child {
+  background-color: #161616af;
+}
+
+.f-button:hover {
+  color: white;
+}
+
+#f-line {
+  background-color: white;
+  height: 0.2rem;
+  margin-top: 2rem;
+  width: 100%;
+}

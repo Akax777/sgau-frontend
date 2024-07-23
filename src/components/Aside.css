@@ -1,0 +1,36 @@
+aside {
+  background-color: rgba(238, 223, 223, 0.929);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  visibility: hidden;
+  width: 20%;
+  z-index: 2;
+}
+
+.aside-item {
+  align-items: center;
+  background-color: rgba(231, 229, 229, 0.929);
+  border: none;
+  color: rgb(28, 27, 27);
+  display: flex;
+  height: 3.8rem;
+  flex-direction: row;
+  font-size: 1.5rem;
+  font-family: Helvetica, Arial, sans-serif;
+  transition: 0.2s;
+  text-align: left;
+  padding-left: 3rem;
+}
+
+.aside-item:hover {
+  background-color: rgba(186, 184, 184, 0.929);
+}
+
+.aside-item-block {
+  height: 70%;
+  margin-left: auto;
+}
